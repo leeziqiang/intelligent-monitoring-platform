@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 25MB
+
+tcp:
+  connect:
+    host: 202.115.53.145
+    port: 6788
+    address: http://139.196.218.20:6263/images/
+    sendFile:  G:/VSST/sendFile/
+    receiveFile: G:/VSST/receiveFile/
+myconfig:
+  rtsp: rtsp://%s:%s@%s:%s/Streaming/Channels/%s01
+  replay-rtsp: rtsp://%s:%s@%s:%s/Streaming/tracks/%s01?starttime=%s&endtime=%s
+
+rtsp:
+#  url: G:/blackPink.mp4
+  url: G:/xingzhen.mp4
+  #  url: rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+  transport:
+    type: udp
+
+
+
